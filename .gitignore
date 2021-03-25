@@ -1,0 +1,14 @@
+# Mac
+.DS_Store
+
+# cache
+*.swp
+.cache
+.tmp
+
+# liblcl
+liblcl.*
+
+# idea
+.vscode
+.idea
