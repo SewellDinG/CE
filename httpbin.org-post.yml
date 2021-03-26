@@ -1,0 +1,13 @@
+name: poc-yaml-httpbin.org-post
+rules:
+  - method: POST
+    path: /post?user=1&pass=2
+    headers:
+      Content-Type: application/x-www-form-urlencoded
+    body: |
+      username=1&password=2
+    expression: |
+      response.body.bcontains(b'username')
+detail:
+  links:
+    - https://httpbin.org/post
