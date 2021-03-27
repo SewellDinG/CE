@@ -16,3 +16,8 @@ func (f *TForm1) OnCheckClick(sender vcl.IObject) {
     }
     f.Output.SetText(url)
 }
+
+func (f *TForm1) OnSetThreadClick(sender vcl.IObject) {
+
+}
+
