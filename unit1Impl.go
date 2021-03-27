@@ -14,7 +14,9 @@ func (f *TForm1) OnCheckClick(sender vcl.IObject) {
         vcl.ShowMessage("None")
         return
     }
-    f.Output.SetText(url)
+    var resp *Response
+    resp = HttpReqer(url, "GET", "", Headers{})
+    f.Output.SetText(string(resp.Body))
 }
 
 func (f *TForm1) OnSetThreadClick(sender vcl.IObject) {
