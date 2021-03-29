@@ -22,7 +22,3 @@ func (f *TForm1) OnCheckClick(sender vcl.IObject) {
 func (f *TForm1) OnSetThreadClick(sender vcl.IObject) {
 
 }
-
-func (f *TForm1) OnCheckGroup1Click(sender vcl.IObject) {
-
-}
